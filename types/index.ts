@@ -2,8 +2,8 @@ export interface Task {
   id: string;
   title: string;
   description?: string;
-  status: "To Do" | "In Progress" | "Done";
-  priority: "Low" | "Medium" | "High";
+  status: "To Do" | "In Progress" | "Done" | undefined;
+  priority: "Low" | "Medium" | "High" | undefined;
   dueDate?: string;
   assignee?: string;
 }

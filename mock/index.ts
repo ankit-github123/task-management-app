@@ -14,7 +14,7 @@ export const TASK_LIST = [
     status: "Not Started",
     priority: "High",
     dueDate: "2025-06-10",
-    assignee: "Bob",
+    // assignee: "Bob",
     description: "Set up login, signup, and JWT-based session management.",
   },
   {
@@ -89,4 +89,16 @@ export const TASK_LIST = [
     assignee: "Jack",
     description: "Implement dark/light mode switch with localStorage persistence.",
   },
+];
+
+export const TASK_STATUSES = [
+  { value: "Todo", label: "Todo" },
+  { value: "In Progress", label: "In Progress" },
+  { value: "Done", label: "Done" },
+];
+
+export const TASK_PRIORITIES = [
+  { value: "Low", label: "Low" },
+  { value: "Medium", label: "Medium" },
+  { value: "High", label: "High" },
 ];
