@@ -11,7 +11,7 @@ export const TASK_LIST = [
   {
     id: "2",
     title: "Implement user authentication",
-    status: "Not Started",
+    status: "To Do",
     priority: "High",
     dueDate: "2025-06-10",
     // assignee: "Bob",
@@ -29,7 +29,7 @@ export const TASK_LIST = [
   {
     id: "4",
     title: "Fix navbar responsiveness bug",
-    status: "In Review",
+    status: "Done",
     priority: "Low",
     dueDate: "2025-06-03",
     assignee: "Dana",
@@ -38,7 +38,7 @@ export const TASK_LIST = [
   {
     id: "5",
     title: "Create marketing banner",
-    status: "Completed",
+    status: "Done",
     priority: "Medium",
     dueDate: "2025-05-28",
     assignee: "Ella",
@@ -56,7 +56,7 @@ export const TASK_LIST = [
   {
     id: "7",
     title: "Conduct usability testing",
-    status: "Not Started",
+    status: "To Do",
     priority: "Low",
     dueDate: "2025-06-12",
     assignee: "Grace",
@@ -74,7 +74,7 @@ export const TASK_LIST = [
   {
     id: "9",
     title: "Migrate to Tailwind CSS v4",
-    status: "Not Started",
+    status: "To Do",
     priority: "Medium",
     dueDate: "2025-06-15",
     assignee: "Ivy",
@@ -83,7 +83,7 @@ export const TASK_LIST = [
   {
     id: "10",
     title: "Add dark mode toggle",
-    status: "In Review",
+    status: "Done",
     priority: "Low",
     dueDate: "2025-06-04",
     assignee: "Jack",
@@ -92,7 +92,7 @@ export const TASK_LIST = [
 ];
 
 export const TASK_STATUSES = [
-  { value: "Todo", label: "Todo" },
+  { value: "To Do", label: "Todo" },
   { value: "In Progress", label: "In Progress" },
   { value: "Done", label: "Done" },
 ];

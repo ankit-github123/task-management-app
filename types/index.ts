@@ -7,3 +7,9 @@ export interface Task {
   dueDate?: string;
   assignee?: string;
 }
+
+export interface Filter {
+  priority?: "Low" | "Medium" | "High" | "all";
+  status?: "To Do" | "In Progress" | "Done" | "all";
+  search?: string;
+}

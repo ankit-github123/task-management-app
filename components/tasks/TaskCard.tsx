@@ -1,3 +1,4 @@
+"use client";
 import { Task } from "../../types";
 import { Pencil, Trash2 } from "lucide-react";
 
@@ -47,7 +48,7 @@ const TaskCard = ({ task, onEdit, onDelete }: TaskCardProps) => {
 
       {task.dueDate && (
         <p className="text-sm text-primary mb-1">
-          <span className="font-semibold">Due Date:</span> {new Date(task.dueDate).toLocaleDateString()}
+          <span className="font-semibold">Due Date:</span> {task.dueDate}
         </p>
       )}
 
