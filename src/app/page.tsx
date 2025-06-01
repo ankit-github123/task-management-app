@@ -1,4 +1,4 @@
-import Image from "next/image";
+"use client";
 import TaskBoard from "../../components/tasks/TaskList";
 
 export default function Home() {

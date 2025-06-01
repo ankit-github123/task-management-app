@@ -13,3 +13,11 @@ export interface Filter {
   status?: "To Do" | "In Progress" | "Done" | "all";
   search?: string;
 }
+
+export interface Recipe {
+  idMeal: string;
+  strMeal: string;
+  strInstructions: string;
+  strMealThumb: string;
+  [key: string]: any;
+}
