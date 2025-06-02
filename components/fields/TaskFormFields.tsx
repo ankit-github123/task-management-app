@@ -30,7 +30,7 @@ export default function TaskFormFields() {
           name="status"
           render={({ field }) => (
             <Select onValueChange={field.onChange} value={field.value}>
-              <SelectTrigger id="status">
+              <SelectTrigger id="status" className="w-full">
                 <SelectValue placeholder="Select status" />
               </SelectTrigger>
               <SelectContent>
@@ -53,7 +53,7 @@ export default function TaskFormFields() {
           name="priority"
           render={({ field }) => (
             <Select onValueChange={field.onChange} value={field.value}>
-              <SelectTrigger id="priority">
+              <SelectTrigger id="priority" className="w-full">
                 <SelectValue placeholder="Select priority" />
               </SelectTrigger>
               <SelectContent>
