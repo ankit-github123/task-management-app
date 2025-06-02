@@ -33,6 +33,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet"
         />
+        <title>Collaborative Task Manager</title>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased font-main min-h-screen bg-gradient-to-br from-green-100 via-green-50 to-green-200 text-gray-900`}
