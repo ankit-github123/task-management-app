@@ -1,5 +1,7 @@
 # 🧩 Collaborative Task Manager
 
+🔗 **Live Demo**: [https://task-management-app-alpha-rouge.vercel.app](https://task-management-app-alpha-rouge.vercel.app)
+
 A modern task management web app built using **Next.js**, **React**, and a powerful suite of tools. This project was developed as part of a technical interview to showcase full-stack proficiency, modular React architecture, form handling, state management, and API integration.
 
 ---
@@ -94,6 +96,16 @@ Start the development server:
 ```bash
 npm run dev
 ```
+
+---
+
+## 📂 Routing Overview
+
+The application is built using **Next.js App Router**. It includes two main routes:
+
+#### 🗂 `/` – Task Management
+
+#### 🍽 `/recipes` – Recipe Explorer
 
 ---
 
