@@ -1,11 +1,24 @@
 "use client";
 import { Task } from "../../types";
-import { Pencil, Trash2 } from "lucide-react";
+import { Pencil, Trash2, ArrowDownCircle, Circle, AlertTriangle, ArrowUp, ArrowDown, Minus } from "lucide-react";
 
 type TaskCardProps = {
   task: Task;
   onEdit?: (task: Task) => void;
   onDelete?: (task: Task) => void;
+};
+
+const getPriorityIcon = (priority: Task["priority"]) => {
+  switch (priority) {
+    case "Low":
+      return <ArrowDown className="text-blue-500" size={16} />;
+    case "Medium":
+      return <Minus className="text-yellow-500" size={16} />;
+    case "High":
+      return <ArrowUp className="text-red-500" size={16} />;
+    default:
+      return null;
+  }
 };
 
 const TaskCard = ({ task, onEdit, onDelete }: TaskCardProps) => {
@@ -42,8 +55,10 @@ const TaskCard = ({ task, onEdit, onDelete }: TaskCardProps) => {
         <span className="font-semibold">Status:</span> <span className="capitalize">{task.status}</span>
       </p>
 
-      <p className="text-sm text-primary mb-1">
-        <span className="font-semibold">Priority:</span> <span className="capitalize">{task.priority}</span>
+      <p className="text-sm text-primary mb-1 flex items-center gap-1">
+        <span className="font-semibold">Priority:</span>
+        <span className="capitalize">{task.priority}</span>
+        {getPriorityIcon(task.priority)}
       </p>
 
       {task.dueDate && (
