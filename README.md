@@ -1,36 +1,147 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧩 Collaborative Task Manager
 
-## Getting Started
+A modern task management web app built using **Next.js**, **React**, and a powerful suite of tools. This project was developed as part of a technical interview to showcase full-stack proficiency, modular React architecture, form handling, state management, and API integration.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- ✅ Create, Read, Update, and Delete tasks (CRUD)
+- 📋 Tasks displayed in status-based columns (To Do, In Progress, Done)
+- 🔄 Form Validation for title, priority and status
+- 🎯 Filter tasks by search, priority and status
+- 🧾 Bonus: Recipe page with data from a public API
+- 🧪 Form validation with Zod + React Hook Form
+- 🎨 Modern UI with Tailwind CSS & Shadcn UI
+- 🧩 Modular file structure using the Next.js App Router
+
+---
+
+## 🚀 Tech Stack
+
+| Layer                | Technology                                      |
+| -------------------- | ----------------------------------------------- |
+| **Framework**        | [Next.js](https://nextjs.org/) (App Router)     |
+| **Language**         | TypeScript                                      |
+| **Styling**          | Tailwind CSS, Shadcn UI                         |
+| **Form Handling**    | React Hook Form + Zod                           |
+| **State Management** | Zustand                                         |
+| **Data Fetching**    | TanStack Query (React Query)                    |
+| **API Integration**  | TheMealDB API (`https://themealdb.com/api.php`) |
+| **Icons**            | Lucide React                                    |
+
+---
+
+## 📦 NPM Packages Used
+
+### 🧱 Core Packages
+
+- `next`
+- `react`
+- `react-dom`
+- `typescript`
+
+### 🎨 Styling & UI
+
+- `tailwindcss`
+- `postcss`
+- `autoprefixer`
+- `@shadcn/ui`
+- `lucide-react`
+
+### 🧪 Forms & Validation
+
+- `react-hook-form`
+- `zod`
+- `@hookform/resolvers`
+
+### ⚙️ State Management
+
+- `zustand`
+
+### 🔄 Data Fetching
+
+- `@tanstack/react-query`
+
+---
+
+## 🛠️ Getting Started
+
+### 📌 Prerequisites
+
+Make sure you have the following installed:
+
+- **Node.js** (v18 or higher)
+- **npm** (v10 or higher)
+
+---
+
+### 📥 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ankit-github123/task-management-app.git
+cd task-management-app
+```
+
+---
+
+### ▶️ Running the App Locally
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🧪 Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command         | Description              |
+| --------------- | ------------------------ |
+| `npm run dev`   | Start development server |
+| `npm run build` | Create production build  |
+| `npm run start` | Start production server  |
+| `npm run lint`  | Lint code with ESLint    |
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🌐 Recipes Page
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You can navigate to the bonus `/recipe` page to:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- View a list of meals fetched from **TheMealDB API**
+- Search recipes by name
+- View ingredients and instructions
+- Uses **TanStack Query** for fetching and caching
 
-## Deploy on Vercel
+> API: [https://themealdb.com/api.php](https://themealdb.com/api.php)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧠 Design Decisions
+
+- Used `app/` directory and App Router for modern file-based routing
+- Global state handled using Zustand
+- Data fetching & caching handled by TanStack Query
+- All forms use React Hook Form + Zod for clean validation
+- Tailwind CSS + Shadcn UI ensures maintainable styling
+- Code is organized into logical domains (tasks, recipes, hooks, types, schema)
+
+---
+
+## ✅ Task Data Model
+
+```ts
+{
+  id: string;
+  title: string;
+  description?: string;
+  status: "To Do" | "In Progress" | "Done";
+  priority: "Low" | "Medium" | "High";
+  dueDate?: string;
+  assignee?: string;
+}
+```
