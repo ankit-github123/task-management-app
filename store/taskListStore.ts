@@ -23,7 +23,7 @@ export const useTodoStore = create<TaskStore>((set, get) => ({
   },
   addTodo: (todo) =>
     set((state) => ({
-      tasks: [...state.tasks, { id: uuidv4(), ...todo }],
+      tasks: [{ id: uuidv4(), ...todo }, ...state.tasks],
     })),
 
   updateTodo: (id, updatedFields) =>

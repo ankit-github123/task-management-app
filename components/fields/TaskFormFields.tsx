@@ -71,7 +71,7 @@ export default function TaskFormFields() {
 
       <div className="space-y-1">
         <Label htmlFor="dueDate">Due Date</Label>
-        <Input type="date" id="dueDate" {...register("dueDate")} />
+        <Input type="date" id="dueDate" className="w-full flex-grow" {...register("dueDate")} />
       </div>
 
       <div className="space-y-1">
